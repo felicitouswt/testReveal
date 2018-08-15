@@ -1,0 +1,372 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BD54C2F4211AEEFA00053756 /* AntiAntiDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = BD54C2F3211AEEFA00053756 /* AntiAntiDebug.m */; };
+		BD54C2F7211AEEFA00053756 /* fishhook.c in Sources */ = {isa = PBXBuildFile; fileRef = BD54C2F6211AEEFA00053756 /* fishhook.c */; };
+		BD54C2F9211AEEFA00053756 /* fishhook.h in Headers */ = {isa = PBXBuildFile; fileRef = BD54C2F8211AEEFA00053756 /* fishhook.h */; };
+		BD54C2FD211AEEFA00053756 /* testReveal.h in Headers */ = {isa = PBXBuildFile; fileRef = BD54C2FC211AEEFA00053756 /* testReveal.h */; };
+		BD54C2FF211AEEFA00053756 /* testReveal.m in Sources */ = {isa = PBXBuildFile; fileRef = BD54C2FE211AEEFA00053756 /* testReveal.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BD54C2EF211AEEFA00053756 /* libtestReveal.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libtestReveal.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD54C2F3211AEEFA00053756 /* AntiAntiDebug.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AntiAntiDebug.m; path = AntiAntiDebug/AntiAntiDebug.m; sourceTree = "<group>"; };
+		BD54C2F6211AEEFA00053756 /* fishhook.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = fishhook.c; path = fishhook/fishhook.c; sourceTree = "<group>"; };
+		BD54C2F8211AEEFA00053756 /* fishhook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = fishhook.h; path = fishhook/fishhook.h; sourceTree = "<group>"; };
+		BD54C2FB211AEEFA00053756 /* put mac app here */ = {isa = PBXFileReference; lastKnownFileType = text; name = "put mac app here"; path = "TargetApp/put mac app here"; sourceTree = "<group>"; };
+		BD54C2FC211AEEFA00053756 /* testReveal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = testReveal.h; sourceTree = "<group>"; };
+		BD54C2FE211AEEFA00053756 /* testReveal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testReveal.m; sourceTree = "<group>"; };
+		BD54C306211AEF7F00053756 /* Reveal */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; name = Reveal; path = TargetApp/Reveal.app/Contents/MacOS/Reveal; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BD54C2EB211AEEFA00053756 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BD54C2E5211AEEFA00053756 = {
+			isa = PBXGroup;
+			children = (
+				BD54C2F1211AEEFA00053756 /* testReveal */,
+				BD54C2F0211AEEFA00053756 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BD54C2F0211AEEFA00053756 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BD54C2EF211AEEFA00053756 /* libtestReveal.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BD54C2F1211AEEFA00053756 /* testReveal */ = {
+			isa = PBXGroup;
+			children = (
+				BD54C2FC211AEEFA00053756 /* testReveal.h */,
+				BD54C2FE211AEEFA00053756 /* testReveal.m */,
+				BD54C2F2211AEEFA00053756 /* AntiAntiDebug */,
+				BD54C2F5211AEEFA00053756 /* fishhook */,
+				BD54C2FA211AEEFA00053756 /* TargetApp */,
+			);
+			path = testReveal;
+			sourceTree = "<group>";
+		};
+		BD54C2F2211AEEFA00053756 /* AntiAntiDebug */ = {
+			isa = PBXGroup;
+			children = (
+				BD54C2F3211AEEFA00053756 /* AntiAntiDebug.m */,
+			);
+			name = AntiAntiDebug;
+			sourceTree = "<group>";
+		};
+		BD54C2F5211AEEFA00053756 /* fishhook */ = {
+			isa = PBXGroup;
+			children = (
+				BD54C2F6211AEEFA00053756 /* fishhook.c */,
+				BD54C2F8211AEEFA00053756 /* fishhook.h */,
+			);
+			name = fishhook;
+			sourceTree = "<group>";
+		};
+		BD54C2FA211AEEFA00053756 /* TargetApp */ = {
+			isa = PBXGroup;
+			children = (
+				BD54C306211AEF7F00053756 /* Reveal */,
+				BD54C2FB211AEEFA00053756 /* put mac app here */,
+			);
+			name = TargetApp;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		BD54C2EC211AEEFA00053756 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD54C2F9211AEEFA00053756 /* fishhook.h in Headers */,
+				BD54C2FD211AEEFA00053756 /* testReveal.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		BD54C2EE211AEEFA00053756 /* testReveal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD54C302211AEEFA00053756 /* Build configuration list for PBXNativeTarget "testReveal" */;
+			buildPhases = (
+				BD54C2EA211AEEFA00053756 /* Sources */,
+				BD54C2EB211AEEFA00053756 /* Frameworks */,
+				BD54C2EC211AEEFA00053756 /* Headers */,
+				BD54C2ED211AEEFA00053756 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = testReveal;
+			productName = testReveal;
+			productReference = BD54C2EF211AEEFA00053756 /* libtestReveal.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BD54C2E6211AEEFA00053756 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = Chasel;
+				TargetAttributes = {
+					BD54C2EE211AEEFA00053756 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = BD54C2E9211AEEFA00053756 /* Build configuration list for PBXProject "testReveal" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = BD54C2E5211AEEFA00053756;
+			productRefGroup = BD54C2F0211AEEFA00053756 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BD54C2EE211AEEFA00053756 /* testReveal */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BD54C2ED211AEEFA00053756 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = /opt/MonkeyDev/Tools/mpack.sh;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BD54C2EA211AEEFA00053756 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD54C2F7211AEEFA00053756 /* fishhook.c in Sources */,
+				BD54C2FF211AEEFA00053756 /* testReveal.m in Sources */,
+				BD54C2F4211AEEFA00053756 /* AntiAntiDebug.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		BD54C300211AEEFA00053756 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/MFrameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/MFrameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				MonkeyDevPath = /opt/MonkeyDev;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		BD54C301211AEEFA00053756 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/MFrameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/MFrameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MonkeyDevPath = /opt/MonkeyDev;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		BD54C303211AEEFA00053756 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T2MCXD2RT6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				INSTALL_PATH = "@executable_path/libtestReveal.dylib";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-lsubstitute",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BD54C304211AEEFA00053756 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T2MCXD2RT6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				INSTALL_PATH = "@executable_path/libtestReveal.dylib";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-lsubstitute",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BD54C2E9211AEEFA00053756 /* Build configuration list for PBXProject "testReveal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD54C300211AEEFA00053756 /* Debug */,
+				BD54C301211AEEFA00053756 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD54C302211AEEFA00053756 /* Build configuration list for PBXNativeTarget "testReveal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD54C303211AEEFA00053756 /* Debug */,
+				BD54C304211AEEFA00053756 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BD54C2E6211AEEFA00053756 /* Project object */;
+}
